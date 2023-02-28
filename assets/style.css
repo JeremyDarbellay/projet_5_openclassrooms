@@ -90,6 +90,12 @@ body {
 	font-size: 14px;
 }
 
+#about-me .about-me__introduction{
+	font-size: unset;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
+
 #gallery {
 	/*	min-height: 100vh; */
 }
@@ -148,6 +154,9 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: calc(1.375rem + 1.5vw);
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
 
 }
 .quote__author {
@@ -189,6 +198,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+
+.service > .service__price > .price {
+	font-size: 1.5rem;
+	margin-bottom: 2px;
 }
 
 #contact {
@@ -240,9 +254,14 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.carousel-item > figure {
+	margin: 0;
 }
 
 @media all and (max-width: 1180px) {
@@ -256,7 +275,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p {
 		width: 100%;
 	}
 }

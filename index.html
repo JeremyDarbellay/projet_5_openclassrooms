@@ -17,7 +17,7 @@
 </head>
 <body>
 <header class="top-header">
-	<h3 class="name">Nina Carducci</h3>
+	<h1 class="name">Nina Carducci</h1>
 	<nav class="nav">   
 		<ul>
 			<li><a href="index.html#about">À propos</a></li>
@@ -35,18 +35,26 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<figure class="carousel-item active">
-					<img src="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="un homme en costume marchant sur un passage piéton">
-				</figure>
-				<figure class="carousel-item">
-					<img src="assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="une foule durant un concert">
-				</figure>
-				<figure class="carousel-item">
-					<img src="assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="un couple s'embrassant durant un mariage">
-				</figure>
-			</div>
+			</div><div class="carousel-inner">
+                <div class="carousel-item active">
+                    <figure>
+                        <img src="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100"
+                            alt="un homme en costume marchant sur un passage piéton">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100"
+                            alt="une foule durant un concert">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure>
+                        <img src="assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100"
+                            alt="un couple s'embrassant durant un mariage">
+                    </figure>
+                </div>
+            </div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
@@ -57,21 +65,19 @@
 			</button>
 		</div>
 	</section>
-	<section id="about">
-		<article>
+	<article id="about">
 			<div class="picture left">
 				<img src="assets/images/nina.png" alt="nina carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
-				<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</article>
-	</section>
+	</article>
 	<section id="gallery">
-		<h3 class="title">Portfolio</h3>
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item" src="assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="des mains levées durant un concert">
@@ -88,14 +94,14 @@
 		<article class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+					<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</article>
 	</section>
 	<section id="services">
-		<h3 class="title">Mes services</h3>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<article class="service">
 				<div class="service__description">
@@ -103,18 +109,18 @@
 					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
-					<h4>350€/demi journée</h4>
+					<p class="price">350€/demi journée</p>
 					<span>Matériel, déplacement inclus</span>
 				</div>
 
 			</article>
 			<article class="service">
 				<div class="service__description">
-					<h3>Retouches</h3>
+					<h3 class="price">Retouches</h3>
 					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
 				<div class="service__price">
-					<h4>50€/photo</h4>
+					<p class="price">50€/photo</p>
 					<span>2 AR par photo</span>
 				</div>
 			</article>
@@ -124,7 +130,7 @@
 					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
 				<div class="service__price">
-					<h4>400€ album A4</h4>
+					<p class="price">400€ album A4</p>
 					<span>30 pages recto/verso</span>
 				</div>
 			</article>
@@ -133,7 +139,7 @@
 	<section class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -142,7 +148,7 @@
 <footer id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="index.html" method="post">
 				<label for="nom">Nom</label>
