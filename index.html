@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script defer src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- <script defer src="assets/bootstrap/bootstrap.bundle.min.js"></script> -->
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="assets/maugallery.js"></script>
 	<script defer src="assets/scripts.js"></script>
@@ -24,7 +24,7 @@
 			<li><a href="index.html#gallery">Galerie</a></li>
 			<li><a href="index.html#services">Service</a></li>
 			<li><a href="index.html#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="le logo d'Instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="le logo d'Instagram" width="20" height="20" ></a></li>
 		</ul>
 	</nav>
 </header>
@@ -38,29 +38,38 @@
 			</div><div class="carousel-inner">
                 <div class="carousel-item active">
                     <figure>
-                        <img 
-							srcset="assets/images/slider/man-on-crosswalk-mobile.jpg 650w, assets/images/slider/man-on-crosswalk-tablet.jpg 1200w, assets/images/slider/man-on-crosswalk-desktop.jpg 1920w"
-							sizes="(max-width:650px) 100vw"
-							src="assets/images-original/slider/man-on-crosswalk.jpg" class="d-block w-100"
-                            alt="un homme en costume marchant sur un passage piéton">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="assets/images/slider/man-on-crosswalk-desktop.jpg" width="1920" height="888">
+							<source media="(min-width: 651px)" srcset="assets/images/slider/man-on-crosswalk-tablet.jpg" width="1200" height="555">
+							<source media="(max-width: 650px)" srcset="assets/images/slider/man-on-crosswalk-mobile.jpg" width="650" height="301">
+							<img 
+								src="assets/images-original/slider/man-on-crosswalk.jpg" class="d-block w-100"
+								alt="un homme en costume marchant sur un passage piéton">
+						</picture>
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img 
-							srcset="assets/images/slider/concert-crowd-mobile.jpg 650w, assets/images/slider/concert-crowd-tablet.jpg 1200w, assets/images/slider/concert-crowd-desktop.jpg 1920w"
-							sizes="(max-width:650px) 100vw"
-							src="assets/images-original/slider/concert-crowd.jpg" class="d-block w-100"
-                            alt="une foule durant un concert">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="assets/images/slider/concert-crowd-desktop.jpg" width="1920" height="888">
+							<source media="(min-width: 651px)" srcset="assets/images/slider/concert-crowd-tablet.jpg" width="1200" height="555">
+							<source media="(max-width: 650px)" srcset="assets/images/slider/concert-crowd-mobile.jpg" width="650" height="301">
+							<img 
+								src="assets/images-original/slider/concert-crowd.jpg" class="d-block w-100"
+								alt="une foule durant un concert">
+						</picture>
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure>
-                        <img 
-							srcset="assets/images/slider/wedding-kiss-mobile.jpg 650w, assets/images/slider/wedding-kiss-tablet.jpg 1200w, assets/images/slider/wedding-kiss-desktop.jpg 1920w"
-							sizes="(max-width:650px) 100vw"
-							src="assets/images-original/slider/wedding-kiss.jpg" class="d-block w-100"
-                            alt="un couple s'embrassant durant un mariage">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="assets/images/slider/wedding-kiss-desktop.jpg" width="1920" height="888">
+							<source media="(min-width: 651px)" srcset="assets/images/slider/wedding-kiss-tablet.jpg" width="1200" height="555">
+							<source media="(max-width: 650px)" srcset="assets/images/slider/wedding-kiss-mobile.jpg" width="650" height="301">
+							<img 
+								src="assets/images-original/slider/wedding-kiss.jpg" class="d-block w-100"
+								alt="un couple s'embrassant durant un mariage">
+						</picture>
                     </figure>
                 </div>
             </div>
@@ -76,7 +85,7 @@
 	</section>
 	<article id="about">
 			<div class="picture left">
-				<img src="assets/images/nina.png" alt="nina carducci">
+				<img width="250" height="250" src="assets/images/nina.png" alt="nina carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -182,7 +191,7 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="assets/images/camera.png" alt="un appareil photo">
+			<img width="250" height="250" src="assets/images/camera.png" alt="un appareil photo">
 		</div>
 	</div>
 </footer>

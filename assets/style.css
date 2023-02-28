@@ -40,6 +40,12 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
+}
+
+
+#header picture > img {
+	height: auto;
 }
 
 #about {
@@ -69,6 +75,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
 #about-me {
