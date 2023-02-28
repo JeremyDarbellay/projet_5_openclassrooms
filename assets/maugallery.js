@@ -79,7 +79,7 @@
     wrapItemInColumn(element, columns) {
       if (columns.constructor === Number) {
         element.wrap(
-          `<div class='item-column mb-4 col-${Math.ceil(12 / columns)}'></div>`
+          `<figure class='item-column mb-4 col-${Math.ceil(12 / columns)}'></figure>`
         );
       } else if (columns.constructor === Object) {
         var columnClasses = "";
@@ -98,7 +98,7 @@
         if (columns.xl) {
           columnClasses += ` col-xl-${Math.ceil(12 / columns.xl)}`;
         }
-        element.wrap(`<div class='item-column mb-4${columnClasses}'></div>`);
+        element.wrap(`<figure class='item-column mb-4${columnClasses}'></figure>`);
       } else {
         console.error(
           `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`
@@ -202,7 +202,7 @@
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
-      gallery.append(`<div class="modal fade" id="${
+      gallery.append(`<aside class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
       }" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-            </div>`);
+            </aside>`);
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
