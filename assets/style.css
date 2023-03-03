@@ -145,6 +145,7 @@ body {
 	align-items: center;
 	display: flex;
 	font-size: 24px;
+	border: none;
 }
 
 .quote {
@@ -378,3 +379,17 @@ input[type="submit"] {
 	}
 }
 
+/* accessibility concern */ 
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next:focus .carousel-control-next-icon {
+	outline: #3292de 5px solid;
+}
+
+.gallery-items-row .gallery-item {
+	cursor: pointer;
+}
+
+/* styling for little paragraph before gallery row */
+.interact-help {
+	text-align: center;margin: 0; padding: 0;
+}
