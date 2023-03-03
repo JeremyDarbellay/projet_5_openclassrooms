@@ -64,6 +64,9 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    $(".gallery").on("click", ".mg-close", () =>
+      $(`#${options.lightboxId}`).modal("toggle")
+    );
 
     /* ajout de l'écouteur de l'appuie sur al touche entrée */
     $(".gallery-item").on("keydown", function(e) {
@@ -230,6 +233,11 @@
                             ${
                               navigation
                                 ? '<button class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></button>'
+                                : '<span style="display:none;" />'
+                            }
+                            ${
+                              navigation
+                                ? '<button class="mg-close" style="cursor:pointer;position:absolute;top:15px;right:-15px;background:white;">x</button>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
