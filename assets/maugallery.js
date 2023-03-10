@@ -240,7 +240,7 @@
                             }
                             ${
                               navigation
-                                ? '<button class="mg-close" style="cursor:pointer;position:absolute;top:15px;right:-15px;background:white;">x</button>'
+                                ? '<button class="mg-close" style="cursor:pointer;position:absolute;top:-15px;right:-15px;background:white;">x</button>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
